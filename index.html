@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Assignment from freeCodeCamp.org -->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="../survey-form/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+  <header class="header"><h1 id="title">Survey Form</h1>
+<p id="description">Welcome! Please use the form below to leave comments about your experience with Heath Media Designs.</p></header>
+<form id="survey form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label> 
+    <input id="name" name="name" type="text" class="form-control" required placeholder="Type Your Name">
+    </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label> 
+    <input name="email" id="email" type="email" class="form-control" required placeholder="Type Your Email">
+    </div>
+    <div class="form-group"><label id="number-label">Age (optional):</label> <input id="number" name="age" type="number" class="form-control" min="13" max="120" placeholder="Type Your Age">
+    </div>
+    <div class="form-group">
+    <label>Which option best describes your current role? <select name="dropdown" id="dropdown" class="form-control">
+      <option value="">(Select one)</option>
+      <option value="Student">Student</option>
+      <option value="Full-Time-Job">Full-Time Job</option>
+      <option value="Part-Time-Job">Part-Time Job</option>
+      <option value="Unemployed">Unemployed</option>
+      <option value="Retired">Retired</option>
+      </select>
+      </label>
+      </div>
+      <div class="form-group">
+    <p>Would you recommend Heath Media Designs to a friend?</p>
+    <label><input type="radio" name="referral" value="1" class="input-radio"> Definitely</label>
+   <label><input type="radio" name="referral" value="2" class="input-radio"> Maybe</label>
+   <label><input type="radio" name="referral" value="3" class="input-radio"> Not sure</label>
+   </div>
+<div class="form group">
+    <p>What type of projects would you be interested in? (Check all that apply)</p><label>
+      <input type="checkbox" name="newsletter" value="Newsletter" class="input-checkbox"> Newsletter</label>
+      <label><input type="checkbox" name="blog" value="Blog" class="input-checkbox"> Blog</label>
+      <label><input type="checkbox" name="online-store" value="online-store" class="input-checkbox"> Online Store</label>
+      <label><input type="checkbox" name="church-website" value="Church Website" class="input-checkbox"> Church Website</label>
+  </div>
+
+    <div class="form-group">
+    <p>Any comments or suggestions?</p>
+      <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Place any comments you have here."></textarea>
+    </div>
+
+    <div class="form-group">
+  <button type="submit" id="submit" value="Submit" class="submit-button">Submit</button>
+  </div>
+</form>
+<footer>
+  <p><a href="https://www.freecodecamp.org" target="_blank">Visit freeCodeCamp</a> | <a href="https://heathology.github.io/">Heath Media Designs</a>
+  </p>
+  <p>123 Free Code Camp Drive</p>
+</footer>
+</div>
+</body>
+</html>
